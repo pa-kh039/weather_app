@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <!-- for fonts awesome icons -->
     <script src="https://kit.fontawesome.com/fed92de64d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" class="search-bar">
+            <input type="text" class="search-bar" placeholder="Search">
             <button><i width="1.5em" height="1.5em" class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="weather">
             <h2 class="city">Weather in Denver</h2>
-            <div class="temp">51°C</div>
-            <img src="" class="icon" alt="">
-            <div class="description">Cloudy</div>
+            <h1 class="temp">51°C</div>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04n.png" class="icon" alt="">
+                <div class="description">Cloudy</div>
+            </div>
             <div class="humidity">Humidity: 60%</div>
             <div class="wind">Wind Speed: 6.2 kmph</div>
         </div>
