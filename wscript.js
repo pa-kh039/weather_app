@@ -10,9 +10,10 @@
 //         const client = createClient('563492ad6f9170000100000167b5b80fc643453f9b0225d28a2e257b');
 //         const {query} = topic;
 //         // console.log(query);
-//         client.photos.search({ query, per_page: 1 }).then((photos) => this.setbg(photos));
-//     // All requests made with the client will be authenticated
-       
+//         client.photos.search({ query, per_page: 1 }).then((photos) => photos.json())
+//         .then((data) => this.setbg(data));
+//         // All requests made with the client will be authenticated
+        
 //     },
 //      setbg: function(photos){
 //         const {url}=photos[0];
